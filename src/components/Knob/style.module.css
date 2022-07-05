@@ -1,0 +1,29 @@
+.knob {
+  display: flex;
+  position: relative;
+  align-self: center;
+  width: 50px;
+  height: 50px
+}
+
+.knob.outer {
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0;
+}
+.knob.inner {
+  border-radius: 50%;
+}
+
+.knob.inner .grip {
+  position: absolute;
+  width: 5px;
+  height: 33px;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%) translateY(7px);
+  will-change: transform;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  background-color: #e728ea;
+}

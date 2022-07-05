@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> should renders without any errors 1`] = `
+<div
+  className="radio"
+>
+  <div
+    className="label"
+    key="one"
+    onClick={[Function]}
+  >
+    <div
+      className="control isSelected"
+    />
+    <div
+      className="title"
+    >
+      one
+    </div>
+  </div>
+  <div
+    className="label"
+    key="two"
+    onClick={[Function]}
+  >
+    <div
+      className="control"
+    />
+    <div
+      className="title"
+    >
+      two
+    </div>
+  </div>
+  <div
+    className="label"
+    key="three"
+    onClick={[Function]}
+  >
+    <div
+      className="control"
+    />
+    <div
+      className="title"
+    >
+      three
+    </div>
+  </div>
+</div>
+`;

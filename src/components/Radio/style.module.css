@@ -1,0 +1,57 @@
+.radio {
+    display: flex;
+    flex-flow: column;
+
+    cursor: pointer;
+}
+
+.label {
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+
+    text-transform: capitalize;
+
+    color: #555;
+    text-shadow: 1px 1px 0 #eee;
+}
+
+.control {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #232323;
+}
+
+.title {
+    line-height: .8;
+
+    flex-grow: 1;
+
+    text-align: right;
+
+    border-bottom: 1px dotted rgba(0,0,0,.2);
+}
+
+.isSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isSelected:after {
+    width: 8px;
+    height: 8px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #232323;
+}

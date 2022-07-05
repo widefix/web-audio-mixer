@@ -1,0 +1,293 @@
+.desk {
+  font-size: 0.8em;
+
+  position: relative;
+
+  width: 100%;
+  padding: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #3b3b3b;
+}
+
+.mixerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.mixerTitle > * {
+  text-align: center;
+}
+
+.mixerTitle h2 {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 9px;
+}
+
+.mixerTitle h2 svg {
+  margin-right: 25px;
+}
+
+.mixerTitle p {
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 71px;
+  text-align: left;
+}
+
+.tracks {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  position: relative;
+  z-index: 2;
+  overflow-x: auto;
+}
+
+.deskContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controlsBlock {
+  position: relative;
+}
+
+.controlsContainerDisable {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.controlsContainer {
+  background-color: #343434;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  position: relative;
+  color: #fff;
+  width: 100%;
+}
+
+.controls {
+  padding: 16px 84px;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controlsLeft {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 64px;
+}
+
+@media (max-width: 1024px) {
+  .controls {
+    padding: 30px 15px 15px;
+  }
+  .controlsLeft {
+    margin-right: 20px;
+  }
+  .controlButton {
+    margin: 0 25px !important;
+  }
+}
+
+.controlsLeft button:last-child {
+  margin-left: 28px;
+}
+
+.controlsCustom {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.controlsRight {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.button {
+  font-size: 0;
+}
+
+.button,
+.controlButton,
+.loopButton {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.button path,
+.controlButton path {
+  fill: #fff;
+}
+
+.controlButton {
+  margin: 0 36px;
+  position: relative;
+}
+
+.controlButton span {
+  position: absolute;
+  left: 12px;
+  color: #fff !important;
+  top: 11px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.button:hover,
+.controlButton:hover {
+  border: 0;
+}
+
+.isNotActive path {
+  fill: #808080;
+}
+
+.isActive path {
+  fill: #e728ea !important;
+}
+
+.button:hover path,
+.controlButton:hover path {
+  fill: #e728ea;
+}
+
+.masterVolumeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.loopButton:hover path {
+  fill: #fff;
+}
+
+.button:active,
+.isButtonPressed {
+  transform: translateY(2px);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+
+.button[disabled] {
+  color: #808080;
+}
+
+.button[disabled] path, .button[disabled] text {
+  fill: #808080;
+}
+
+.effects {
+  font-size: 0.8rem;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.progressContainer {
+  position: relative;
+  width: 100%;
+}
+
+/* TODO: refactor all progressContainer styles to belong to fader styles */
+.progressContainer > div:first-child {
+  border-radius: 0;
+}
+
+.progressContainer [data-thumb] {
+  border-radius: 0;
+}
+
+.controlsContainer:hover .progressBar {
+  visibility: visible;
+}
+
+.progressBar {
+  visibility: hidden;
+}
+
+.progressBar + div {
+  border-radius: 0;
+}
+
+.progressTimeNow, .progressTime {
+  position: absolute;
+  top: 16px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.progressTimeNow {
+  left: 16px;
+}
+
+.progressTime {
+  right: 16px;
+}
+
+.masterVolume {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  margin-right: 18px;
+}
+
+.masterVolume svg {
+  height: 25px;
+}
+
+.volumeSlider {
+  width: 170px;
+}
+
+@media only screen and (max-width: 375px) {
+  .tracks,
+  .controlsContainer {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.controlsWrapper {
+  z-index: 1;
+  background-color: #343434;
+}
+
+.isFixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.isFixed .progressTimeNow,
+.isFixed .progressTime {
+  top: -32px;
+}

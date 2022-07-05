@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Desk /> should renders without any errors 1`] = `
+<div
+  className="desk"
+>
+  <div
+    className="tracks"
+  >
+    <Meter
+      analyser={Object {}}
+    />
+  </div>
+  <div
+    className="controlsContainer"
+  >
+    <div
+      className="controls"
+    >
+      <button
+        className="control button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <Icon
+          type="play"
+        />
+        Play
+      </button>
+      <button
+        className="control button isButtonPressed"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <Icon
+          type="pause"
+        />
+        Pause
+      </button>
+      <button
+        className="control button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <Icon
+          type="rewind"
+        />
+        Rewind
+      </button>
+    </div>
+    <div
+      className="effects"
+    />
+  </div>
+</div>
+`;

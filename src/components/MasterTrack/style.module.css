@@ -1,0 +1,23 @@
+.meter {
+  position: relative;
+  box-shadow: -19px 0 25px rgba(0, 0, 0, 0.37);
+  z-index: 10;
+}
+
+.meterValue {
+    position: absolute;
+    left: 50%;
+    transform: rotate(180deg) translateX(50%);
+    bottom: 70px;
+    z-index: 1;
+    height: 178px;
+}
+
+.masterTrackIcon {
+  padding: 57px 0 10px;
+}
+
+.masterTrackIcon svg {
+  width: 25px;
+  height: 25px;
+}
