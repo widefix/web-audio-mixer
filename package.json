@@ -2,9 +2,8 @@
   "name": "react-mixdesk-exp",
   "version": "0.1.1",
   "description": "React web dub mixdesk",
-  "author": "prophetpanama, rootical",
   "license": "MIT",
-  "repository": "rootical/mixer",
+  "repository": "widefix/web-audio-mixer",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
@@ -17,8 +16,6 @@
     "prepublish": "run-s build",
     "test": "jest --no-cache",
     "test:watch": "jest --no-cache --watch",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
     "tsc:watch": "tsc --watch"
   },
   "peerDependencies": {
