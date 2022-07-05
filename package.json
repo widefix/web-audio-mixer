@@ -22,7 +22,7 @@
     "tsc:watch": "tsc --watch"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
