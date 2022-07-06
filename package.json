@@ -13,7 +13,7 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepublish": "run-s build",
+    "postinstall": "npm run build",
     "test": "jest --no-cache",
     "test:watch": "jest --no-cache --watch",
     "tsc:watch": "tsc --watch"
@@ -54,7 +54,6 @@
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "ramda": "^0.28.0",
     "react": "file:../node_modules/react",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
@@ -65,7 +64,8 @@
   ],
   "dependencies": {
     "recoil": "^0.7.4",
-    "standardized-audio-context": "^25.3.28"
+    "standardized-audio-context": "^25.3.28",
+    "ramda": "^0.28.0"
   },
   "jest": {
     "testRegex": "((\\.|/*.)(test))\\.tsx?$",
